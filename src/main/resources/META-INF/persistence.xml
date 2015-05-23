@@ -1,0 +1,11 @@
+<persistence>
+    <persistence-unit name="pokerservice"
+                      transaction-type="JTA">
+        <jta-data-source>java:jboss/jdbc/pokerserviceDS</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>
